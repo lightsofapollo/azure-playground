@@ -1,10 +1,8 @@
-var http = require('http');
-var debug = require('debug')('azure deubg');
+var hapi = require('hapi');
 
-http.createServer(function(req, res) {
-  debug('made request');
-  console.log('made request');
-  res.writeHead(200);
-  res.write(JSON.stringify(process.env));
-  res.end();
-}).listen(process.env.PORT || 80);
+var server = new hapi.Server();
+server.connection({ port: 60023 });
+
+server.start(function() {
+  console.log('doing stuff', server.info.uri);
+});

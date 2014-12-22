@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/lightsofapollo/azure-playground",
   "dependencies": {
-    "debug": "^2.1.0"
+    "debug": "^2.1.0",
+    "hapi": "^8.0.0"
   }
 }
