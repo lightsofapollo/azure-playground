@@ -4,5 +4,5 @@ var server = new hapi.Server();
 server.connection({ port: 60023 });
 
 server.start(function() {
-  console.log('doing stuff', server.info.uri);
+  console.log('doing stuff yay', server.info.uri);
 });
