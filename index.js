@@ -3,6 +3,7 @@ var debug = require('debug')('azure deubg');
 
 http.createServer(function(req, res) {
   debug('made request');
+  console.log('made request');
   res.writeHead(200);
   res.write(JSON.stringify(process.env));
   res.end();
