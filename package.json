@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/lightsofapollo/azure-playground/issues"
   },
-  "homepage": "https://github.com/lightsofapollo/azure-playground"
+  "homepage": "https://github.com/lightsofapollo/azure-playground",
+  "dependencies": {
+    "debug": "^2.1.0"
+  }
 }
